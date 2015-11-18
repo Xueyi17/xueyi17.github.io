@@ -1,23 +1,137 @@
 <!DOCTYPE html>
-
+<!-- Template by quackit.com -->
 <html>
     <head>
-     Hello!
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Nm2207 Final Project Writeup</title>
+        <style type="text/css">
+        
+            body {
+                margin:0;
+                padding:0;
+                font-family: Sans-Serif;
+                line-height: 1.5em;
+            }
+            
+            header {
+                background-image: url("http://blog.timesunion.com/travelgal/files/2012/03/05.-Firefly-image_TH.jpg");
+                background-size: 100%;
+                height: 300px;
+            }
+            
+            header h1 {
+                margin: 0;
+                padding-top: 15px;
+            }
+            
+            main {
+                padding-bottom: 10010px;
+                margin-bottom: -10000px;
+                float: left;
+                width: 100%;
+            }
+            
+            nav {
+                padding-bottom: 10010px;
+                margin-bottom: -10000px;
+                float: left;
+                width: 230px;
+                margin-left: -230px;
+                background: #FFFFCC;
+            }
+            
+            footer {
+                clear: left;
+                width: 100%;
+                background: #FFFF99;
+                text-align: center;
+                padding: 4px 0;
+            }
+    
+            #wrapper {
+                overflow: hidden;
+            }
+                        
+            #content {
+                margin-right: 230px; /* Same as 'nav' width */
+            }
+            
+            .innertube {
+                margin: 15px; /* Padding for content */
+                margin-top: 0;
+            }
+        
+            p {
+                color: #555;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            nav ul a {
+                color: darkgreen;
+                text-decoration: none;
+            }
+        
+        </style>
+        
+    
     </head>
+    
+    <body>      
 
-  <body>
-    <h1> Welcome to my web world! </h1>
-    Here is the link to my game <a href="http://xueyi17.github.io/MyProject">here!</a>
-  </body>
-  
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <header>
+            <div class="top">
+                <h1>Catching Fireflies</h1>
+            </div>
+        </header>
+        
+        <div id="main">
+        
+            <main>
+                <div id="content">
+                    <div class="innertube">
+                        <h1>About the Game</h1>
+                        <p> This game is about catching 'Fireflies' which are the yellow dots and avoid the red bees.
+                        The aim is to get the highest score possible. I chose this game because it will be a good example
+                        to utilise the various skills I had learnt in this module for the semester.
+                        This is a simple game suited for kids, thus, the music used is also generally more cheerful and encouraging.
+                        </p><br>
 
-  ga('create', 'UA-69010368-1', 'auto');
-  ga('send', 'pageview');
+                        <p>I used the code for one of our assignment as the base and work on it to develop a new game. Hence, the layout is similar to the game assignment. However, the aesthetics were modified to suit the game.</p>
 
-</script>
+                        <p> I used 2 different arrays of circles to depict the 2 different characters in the game which are the fireflies and bees recpectively. There are more circles in the array for fireflies so that the player will be able to 'catch' the fireflies and avoid the bees.</p>
+
+                        <p> I used gravity to make the circles fall from top to bottom of the canvas and randomised the x position where the circles will start to fall so that they will fall at the same height but is still spreaded out. The rates at which they fall are also randomised so that the game will be more fun. </p>
+
+                        <p> The score is recorded at the bottom of the page so that players can keep track of their scores. Each round will run for 30 seconds. This is done using a timer which will start only when the 'play' button is clicked. </p>
+
+                        <p> To catch the fireflies, I used a event listener so that the 'net' will follow the mouse where it goes. Whenever the position of the mouse and the fireflies (which is the array of circle) is within the distance of 50px, the firefly will be considered caught and 10 points is given to the player. Using a similar concept, when the mouse position is within distance range of 50px with the 'bees', 5 points will be deducted through minusing the counter</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <nav>
+                <div class="innertube">
+                    <h3>Game Link</h3>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                     
+            </nav>
+        
+        </div>
+        
+        <footer>
+            <div class="innertube">
+                <p>Credits to: Loke Xue Yi</p>
+            </div>
+        </footer>
+    
+    </body>
 </html>
